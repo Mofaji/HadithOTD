@@ -83,7 +83,7 @@ async function getRandomHadith() {
             translation: randomHadith.text || '',
             transcription: '',
             info: formattedInfo,
-            grade: randomHadith.by || ''
+            grade: randomHadith.by ? `${randomHadith.by} (R.A)` : ''
         };
         console.log('Selected hadith:', hadithData);
         return hadithData;
